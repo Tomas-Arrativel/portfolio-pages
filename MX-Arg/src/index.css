@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;700&display=swap');
+
+:root {
+  --font-text: 'Belanosima', sans-serif;
+  --font-title: 'Bebas Neue', sans-serif;
+
+  --orange: #eb8340;
+  --green: #3feb43;
+  --blue: #3d10eb;
+  --white: #e8e1dd;
+  --dark: #403d3c;
+}

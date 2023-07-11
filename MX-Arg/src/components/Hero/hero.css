@@ -1,0 +1,14 @@
+.header__hero {
+  min-height: 70vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 6, 87, 0.5), rgba(0, 6, 87, 0.5)),
+    url(../../img/hero-img.webp) no-repeat top fixed;
+  background-size: cover;
+}
+
+.header__hero-text {
+  position: absolute;
+  color: var(--white);
+  right: 0;
+  bottom: 45%;
+}
