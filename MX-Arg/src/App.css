@@ -6,17 +6,29 @@
 }
 
 .section__padding {
-  padding: 8rem 4rem;
+  padding: 2rem 10rem;
+}
+
+@media (max-width: 1000px) {
+  .section__padding {
+    padding: 2rem 6rem;
+  }
 }
 
 @media (max-width: 800px) {
   .section__padding {
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
   }
 }
 
 @media (max-width: 450px) {
   .section__padding {
-    padding: 2rem 4rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .section__padding {
+    padding: 2rem 1rem;
   }
 }
