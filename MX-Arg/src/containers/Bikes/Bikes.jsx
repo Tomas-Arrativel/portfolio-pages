@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './bikes.css';
 import Bike from '../../components/Bike/Bike';
 
@@ -13,6 +14,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const Bikes = () => {
+  const [displacement, setDisplacement] = useState('125');
+
   return (
     <section className='main__bikes section__padding'>
       <h2>Bikes available</h2>
@@ -20,25 +23,40 @@ const Bikes = () => {
         // install Swiper modules
         modules={[Navigation, Pagination]}
         spaceBetween={50}
-        slidesPerView={1}
-        centeredSlides={true}
-        loop={true}
+        slidesPerView={2}
+        loop={false}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
         className='main__bikes-slider'
       >
         <SwiperSlide>
-          <Bike img='' title='' />1
+          <Bike
+            img={`img/ktm-${displacement}sx.png`}
+            title={`KTM SX ${displacement}cc`}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Bike img='' title='' />2
+          <Bike
+            img={`img/gasgas-mc${displacement}.png`}
+            title={`GASGAS MC ${displacement}cc`}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Bike img='' title='' />3
+          <Bike
+            img={`img/yz${displacement}.png`}
+            title={`YZ ${displacement}cc`}
+          />
         </SwiperSlide>
       </Swiper>
+
+      <div className='main__bikes-displacement'>
+        <h3>Displacements available</h3>
+        <div>
+          <button onClick={() => setDisplacement('125')}>125 cc</button>
+          <button onClick={() => setDisplacement('250')}>250 cc</button>
+          <button onClick={() => setDisplacement('450')}>450 cc</button>
+        </div>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,12 @@
+.main__bikes-bike {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.main__bikes-bike img {
+  height: 400px;
+}
