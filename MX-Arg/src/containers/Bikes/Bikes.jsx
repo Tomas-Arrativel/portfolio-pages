@@ -32,13 +32,13 @@ const Bikes = () => {
       >
         <SwiperSlide>
           <Bike
-            img={`img/ktm-${displacement}sx.png`}
+            img={`img/ktm${displacement}.png`}
             title={`KTM SX ${displacement}cc`}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Bike
-            img={`img/gasgas-mc${displacement}.png`}
+            img={`img/gasgasmc${displacement}.png`}
             title={`GASGAS MC ${displacement}cc`}
           />
         </SwiperSlide>
