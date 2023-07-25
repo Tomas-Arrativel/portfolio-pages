@@ -1,0 +1,112 @@
+.main__rental {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__rental-rent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #ccc;
+  margin-top: 2rem;
+}
+
+.main__rental-rent__options {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown__menu {
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 2rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--white);
+}
+.dropdown__menu p {
+  cursor: pointer;
+}
+
+.dropdown__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid var(--dark);
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 33px;
+  background-color: var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown__options p {
+  cursor: pointer;
+  border-top: 1px solid var(--dark);
+  width: 100%;
+  text-align: center;
+}
+.dropdown__options p:first-of-type {
+  border-top: none;
+}
+
+.rent-btn {
+  padding: 10px 35px;
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+.rent-btn:hover {
+  background-color: #ffaa72;
+  color: var(--dark);
+}
+
+@media (max-width: 600px) {
+  .dropdown__menu {
+    padding: 5px 1.2rem;
+  }
+  .rent-btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .dropdown__menu p {
+    font-size: 0.8rem;
+  }
+  .rent-btn {
+    font-size: 0.8rem;
+    padding: 5px 30px;
+  }
+
+  .dropdown__options p {
+    font-size: 0.8rem;
+  }
+}

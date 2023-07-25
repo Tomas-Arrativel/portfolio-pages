@@ -1,0 +1,46 @@
+.main__rental-rent__torent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.track-container,
+.bike-container {
+  height: 100%;
+  width: 50%;
+}
+.track-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.bike-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.track-container h3,
+.bike-container h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main__rental-rent__torent {
+    flex-direction: column;
+  }
+
+  .track-container,
+  .bike-container {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .track-container h3,
+  .bike-container h3 {
+    font-size: 1.1rem;
+  }
+}

@@ -4,9 +4,15 @@ import { ToRent } from '../../components/exports';
 
 const Rental = () => {
   const [trackDrop, setTrackDrop] = useState(false);
+  const [bikeDrop, setBikeDrop] = useState(false);
 
   const [trackOption, setTrackOption] = useState('Choose');
   const track = `img/${trackOption.toLowerCase().replace(' ', '')}.jpg`;
+
+  const [bikeOption, setBikeOption] = useState('Choose');
+  const bike = `img/${bikeOption.toLowerCase().replaceAll(' ', '')}.png`;
+
+  console.log(bike);
 
   return (
     <section className='main__rental section__padding'>
@@ -15,8 +21,8 @@ const Rental = () => {
         <ToRent
           imgTrack={track.includes('choose') ? 'img/complejomx.jpg' : track}
           track={trackOption !== 'Choose' ? trackOption : 'Complejo MX'}
-          imgBike=''
-          bike=''
+          imgBike={bike.includes('choose') ? 'img/yz250.png' : bike}
+          bike={bikeOption !== 'Choose' ? bikeOption : 'YZ 250'}
         />
         <div className='main__rental-rent__options'>
           <div className='dropdown'>
@@ -58,8 +64,46 @@ const Rental = () => {
             </div>
           </div>
 
-          {/* <Dropdown option1='KTM' option2='YZ' option3='Gasgas MC' /> */}
+          <div className='dropdown'>
+            <div
+              className='dropdown__menu'
+              onClick={() => setBikeDrop(!bikeDrop)}
+            >
+              <p>{bikeOption}</p>
+            </div>
+            <div
+              className={
+                bikeDrop ? 'dropdown__options' : 'dropdown__options hidden'
+              }
+            >
+              <p
+                onClick={(e) => {
+                  setBikeOption(e.target.innerText);
+                  setBikeDrop(false);
+                }}
+              >
+                KTM 250
+              </p>
+              <p
+                onClick={(e) => {
+                  setBikeOption(e.target.innerText);
+                  setBikeDrop(false);
+                }}
+              >
+                YZ 250
+              </p>
+              <p
+                onClick={(e) => {
+                  setBikeOption(e.target.innerText);
+                  setBikeDrop(false);
+                }}
+              >
+                Gasgas MC 250
+              </p>
+            </div>
+          </div>
         </div>
+        <button className='rent-btn'>Rent Now!</button>
       </div>
     </section>
   );
