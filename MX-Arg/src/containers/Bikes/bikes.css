@@ -1,3 +1,20 @@
+.main__bikes h2 {
+  font-size: 2.5rem;
+}
+
+.main__bikes-slider h2 {
+  font-size: 1.6rem;
+}
+
+.main__bikes-displacement {
+  margin-top: 0.9rem;
+}
+.main__bikes-displacement h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+
 .main__bikes-displacement div {
   display: flex;
   justify-content: center;
@@ -20,4 +37,24 @@
 .main__bikes-displacement div button:hover {
   background-color: var(--white);
   color: var(--orange);
+}
+
+@media (max-width: 700px) {
+  .main__bikes h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .main__bikes-displacement div button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main__bikes-displacement div {
+    flex-direction: column;
+  }
+
+  .main__bikes-displacement div button {
+    width: 100%;
+  }
 }

@@ -3,7 +3,7 @@ import './bike.css';
 
 const Bike = (props) => {
   return (
-    <div className='main__bikes-bike'>
+    <div className='main__bikes-bike' id='bikes'>
       <img src={props.img} alt='image of the dirtbike' />
       <h2>{props.title}</h2>
     </div>

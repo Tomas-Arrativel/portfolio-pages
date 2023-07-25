@@ -23,7 +23,8 @@ const Bikes = () => {
         // install Swiper modules
         modules={[Navigation, Pagination]}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={1}
+        centeredSlides={true}
         loop={false}
         navigation
         pagination={{ clickable: true }}

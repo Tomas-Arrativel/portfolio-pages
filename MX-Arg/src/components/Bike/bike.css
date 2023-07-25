@@ -10,3 +10,14 @@
 .main__bikes-bike img {
   height: 400px;
 }
+
+@media (max-width: 800px) {
+  .main__bikes-bike img {
+    height: auto;
+    width: 100%;
+  }
+
+  .main__bikes-bike h2 {
+    font-size: 1.2rem;
+  }
+}
