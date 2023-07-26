@@ -29,23 +29,23 @@ const Navbar = () => {
         colorBG ? 'header__navbar header__navbar-bg' : 'header__navbar'
       }
     >
-      <a href='#' className='header__navbar-logo'>
+      <a href='#header' className='header__navbar-logo'>
         <img src='./img/logo.png' alt='Mx arg logo' />
         <h2>MX ARG</h2>
       </a>
 
       <ul className={click}>
         <li>
-          <a href='#'>Tracks</a>
+          <a href='#tracks'>Tracks</a>
         </li>
         <li>
-          <a href='#'>Bikes</a>
+          <a href='#bikes'>Bikes</a>
         </li>
         <li>
-          <a href='#'>Rent a bike</a>
+          <a href='#rental'>Rent a bike</a>
         </li>
         <li>
-          <a href='#'>Contact</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
 

@@ -15,7 +15,7 @@ const Rental = () => {
   console.log(bike);
 
   return (
-    <section className='main__rental section__padding'>
+    <section className='main__rental section__padding' id='rental'>
       <h2>Choose your bike and your track!</h2>
       <div className='main__rental-rent'>
         <ToRent

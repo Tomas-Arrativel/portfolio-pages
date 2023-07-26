@@ -17,7 +17,7 @@ const Bikes = () => {
   const [displacement, setDisplacement] = useState('125');
 
   return (
-    <section className='main__bikes section__padding'>
+    <section className='main__bikes section__padding' id='bikes'>
       <h2>Bikes available</h2>
       <Swiper
         // install Swiper modules
