@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.hero_carousel {
+  width: 800px;
+}
+
+.hero_carousel div img {
+  height: 40vh;
+  width: 100%;
+}
