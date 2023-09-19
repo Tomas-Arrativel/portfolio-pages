@@ -2,11 +2,11 @@ import { Header, Selection, Footer } from './containers/exports';
 
 function App() {
   return (
-    <body>
+    <div>
       <Header />
       <Selection />
       <Footer />
-    </body>
+    </div>
   );
 }
 
