@@ -1,0 +1,34 @@
+:root {
+  /* Resaltar */
+  --blue: #3498db;
+  --red: #e74c3c;
+  --green: #2ecc71;
+  --yellow: #f1c40f;
+
+  /* Neutral back color */
+  --light-gray: #f5f5f5;
+  --gray: #dcdcdc;
+  --dark-gray: #333333;
+
+  /* Accent colors */
+  --orange: #e67e22;
+  --pink: #e91e63;
+  --purple: #9b59b6;
+  --lime-green: #00bc8c;
+
+  /* Text colors */
+  --font-white: #ffffff;
+  --font-gray: #333333;
+  --font-black: #000000;
+
+  /* Buttons */
+  --btn-blue: #42a5f5;
+  --btn-green: #66bb6a;
+  --btn-orange: #ffa726;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
